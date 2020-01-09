@@ -1,0 +1,170 @@
+#include<graphics.h>
+#include<stdio.h>
+#include<dos.h>
+#include<conio.h>
+void main()
+{ int gd=DETECT,gm;
+  initgraph(&gd,&gm,"C:\\TC\\BGI");
+  for(int i=0;i<=490;i++)
+  {  if(i==0)
+     {  cleardevice();
+	setcolor(RED);
+	settextstyle(9,HORIZ_DIR,1);
+	outtextxy(50,100,"PRESENTING:- A SHORT FILM");
+	setcolor(YELLOW);
+	settextstyle(6,HORIZ_DIR,4);
+	outtextxy(200,300,"-: LOVE STORY :-");
+	setcolor(13);
+	settextstyle(9,HORIZ_DIR,1);
+	outtextxy(100,400,"ANIMATED BY:- HARSHIT PARSAI");
+	setcolor(7);
+	rectangle(0,0,639,450);
+	delay(5000);
+
+     }
+     setcolor(YELLOW);
+     circle(100+i/10,100,30);
+     setfillstyle(SOLID_FILL,GREEN);
+     bar(0,410,639,420);
+     setcolor(13);
+     circle(500,260,10);
+     ellipse(500,310,0,360,20,40);
+     rectangle(495,340,505,410);
+     circle(-10+i,260,10);
+     ellipse(-10+i,310,0,360,20,40);
+     rectangle(-15+i,340,-5+i,410);
+     if(i==190)
+     {   setcolor(RED);
+	 settextstyle(6,HORIZ_DIR,1);
+	 outtextxy(390,220,"i was waiting u since morning");
+	 delay(3000);
+     }
+     if(i==210)
+     { setcolor(RED);
+       outtextxy(140,180,"darling try to understand");
+       outtextxy(140,220,"i was busy in buying a gift for u.");
+       delay(5000);
+     }
+     if(i==270)
+     { setcolor(RED);
+       outtextxy(390,220,"dont tell me lie baby ");
+       delay(2000);
+     }
+     if(i==310)
+     {  setcolor(RED);
+	outtextxy(280,220,"believe me plzz");
+	delay(1500);
+     }
+     if(i==340)
+     {  setcolor(RED);
+	outtextxy(390,220,"U always deceive me...");
+	delay(1500);
+     }
+     if(i==490)
+     {   for(int j=0;j<=500;j++)
+	 {       setcolor(GREEN);
+		 bar(0,410,639,420);
+		 setcolor(YELLOW);
+		 circle(149+j/10,100,30);
+		 setcolor(13);
+		 circle(500,260,10);
+		 ellipse(500,310,0,360,20,40);
+		 rectangle(495,340,505,410);
+		 circle(480,260,10);
+		 ellipse(480,310,0,360,20,40);
+		 rectangle(475,340,485,410);
+		 setcolor(RED);
+		 settextstyle(7,HORIZ_DIR,2);
+		 outtextxy(390,180,"BUT I LUV U SO MUCH");
+		 setcolor(j/10);
+		 circle(470,0+j,5);
+		 circle(500,10+j,6);
+		 circle(530,-10+j,4);
+		 setcolor(j/12);
+		 circle(480,-20+j,5);
+		 circle(510,5+j,3);
+		 circle(520,-30+j,4);
+		 setcolor(j);
+		 circle(450,-50+j,5) ;
+		 circle(480,-70+j*2,4);
+		 circle(510,-100+j*3,6);
+		 setcolor(j/5);
+		 circle(450,-30+j*2,4);
+		 circle(470,10+j/2,6);
+		 circle(490,20+j,5);
+		 circle(510,-50+j*3,5);
+		 circle(530,25+j/2,6);
+		 circle(550,25+j,4);
+		 if(j==500)
+		 {  for(int k=0;k<169;k++)
+		    {  setcolor(YELLOW);
+		       circle(199+j/10,100,30);
+		       setfillstyle(SOLID_FILL,GREEN);
+		       bar(0,410,639,420);
+		       setfillstyle(SOLID_FILL,YELLOW);
+		       bar(0+k*2,330,100+k*2,350);
+		       bar(0+k*2,350,150+k*2,370);
+		       setcolor(WHITE);
+		       circle(30+k*2,390,20);
+		       circle(100+k*2,390,20);
+		       setcolor(13);
+		       circle(500,260,10);
+		       ellipse(500,310,0,360,20,40);
+		       rectangle(475,340,505,410);
+		       circle(480,260,10);
+		       ellipse(480,310,0,360,20,40);
+		       rectangle(475,340,485,410);
+		       delay(50);
+		       if(k==168)
+		       {  cleardevice();
+			  setcolor(RED);
+			  settextstyle(9,HORIZ_DIR,1);
+			  outtextxy(200,150,"OHH THEY R DEAD");
+			  setcolor(YELLOW);
+			  circle(215,100,30);
+			  setfillstyle(SOLID_FILL,GREEN);
+			  bar(0,410,639,420);
+			  setfillstyle(SOLID_FILL,YELLOW);
+			  bar(336,330,436,350);
+			  bar(336,350,486,370);
+			  circle(366,390,20);
+			  circle(466,390,20);
+			  setcolor(13) ;
+			  rectangle(436,400,486,410);
+			  ellipse(516,390,0,360,40,20);
+			  circle(566,390,10);
+			  delay(5000);
+			  cleardevice();
+			  setcolor(13);
+			  rectangle(0,0,639,450);
+			  setcolor(RED);
+			  settextstyle(9,HORIZ_DIR,1);
+			  outtextxy(200,150,"THE END");
+			  outtextxy(100,300,"A STORY DIRECTED AND ANIMATED BY");
+			  setcolor(YELLOW);
+			  outtextxy(100,350,"HARSHIT PARSAI");
+
+			  delay(4000);
+
+		       }
+		       if(k==168)
+		       {  delay(3000);
+		       }
+		       cleardevice();
+		    }
+
+
+		 }
+		 delay(20);
+		 cleardevice();
+	 }
+	delay(8000);
+	getch();
+
+     }
+     delay(20);
+     cleardevice();
+
+  }
+  getch();
+}
